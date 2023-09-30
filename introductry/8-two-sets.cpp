@@ -11,4 +11,12 @@ int main() {
     cout << "NO";
     return 0;
   }
+  cout << "YES";
+  if(n%4==3) {
+    cout << n/2;
+    cout << n/2+1;
+  } else {
+    cout << n/2;
+    cout << n/2;
+  }
 }
