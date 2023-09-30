@@ -15,19 +15,20 @@ int main() {
     return 0;
   }
   
-  if(n%2==0) 
-    for(int i=0; i<=n; i+=2)
-      cout << i << " ";
-    for(int i=0; i<=n-1; i+=1)
-      cout << i << " ";
-  } else {
-    for(int i=0; i<=n; ++i)
-      cout << i << " ";
-    for(int i=0; i<=n-1; i+=2)
-      cout << i << " ";
+  if(n%2) {
+    for(int i=1; i<=n; i+=2) {
+      cout << i << " ";
+    }
+    for(int i=2; i<=n-1; i+=2) {
+      cout << i << " ";
+    }
+  } 
+  else {
+    for(int i=2; i<=n; i+=2) {
+      cout << i << " ";
+    }
+    for(int i=1; i<=n-1; i+=2) {
+      cout << i << " ";
+    }
   }
-
-
-// 1 3 5 7 2 4 6
-// 2 4 6 1 3 5
 }
